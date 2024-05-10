@@ -1,0 +1,359 @@
+@import url("https://fonts.google.com/specimen/Raleway");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --veryDarkBlue: hsl(243, 87%, 12%);
+    --desaturatedBlue: hsl(238, 22%, 44%);
+    --brightBlue: hsl(224, 93%, 58%);
+    --moderateCyan: hsl(170, 45%, 43%);
+    --lightGrayishBlue: hsl(240, 75%, 98%);
+    --lightGray: hsl(0, 0%, 75%);
+}
+.body{
+    padding: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-left > img{
+    width: 6em;
+    padding-left: 2.5em;
+}
+ul{
+    display: inline-flex;
+}
+ul li{
+ list-style: none;
+ padding: 0.7rem;
+ color: var(--veryDarkBlue);
+}
+.section-one, .section-two, .section-three, footer{
+    padding-top: 6em;
+    font-family: 'Open Sans', sans-serif;
+}
+.section-one .illustration1, .section-two .illustration2,  form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.section-one .illustration1  > img, .section-two .illustration2 > img{
+width: 20em;
+}
+.illustration1-words, .illustration2-words{
+    padding-top: 2em;
+    color:    var(--veryDarkBlue);
+}
+.illustration1-words div > h1{
+    padding-left: 1em;
+    width: 15em;
+    text-align: center;
+    text-align-last: center;
+}
+.illustration1-words div > p{
+    padding-left: 1.5em;
+    text-align: center;
+    padding-top: 1.5em;
+    line-height: 1.3em;
+     width: 21em;
+}
+form{
+    padding-top: 1.5em;
+    position: relative;
+}
+input[type="text"]{
+    width: 22em;
+   padding: 0.6em;
+    outline: none;
+    padding-left: 1em;
+    color: var(--veryDarkBlue);
+    border: 1px solid var(--desaturatedBlue);
+    border-radius: 5px;
+}
+button{
+    position: absolute;
+    top: 4em;
+    width: 16.4em;
+    padding: 0.5em;
+    background-color: var(--brightBlue);
+    border: none;
+    border-radius: 5px;
+    color: var(--lightGrayishBlue);
+    font-size: 18px;
+}
+@media (min-width: 1000px){
+    .nav-left > img{
+        width: 34em;
+        padding-left: 0em;
+        padding-right: 25em;
+    }
+    ul li{
+     padding: 2em;
+     font-size: 18px;
+    }
+    .section-one,.section-two{
+        justify-content: space-between;
+    }
+    .section-one .illustration1  > img{
+        width: 70em;
+        padding-left: 32em;
+    }
+    .illustration1-words{
+      position: relative;
+    }
+    .illustration1-words > div{
+        position: absolute;
+        bottom: 10em;
+        left: 3em;
+    }
+    .illustration1-words div > h1{
+        padding-left: 1.8em;
+        text-align: justify;
+        width: 17em;
+        text-align-last: start;
+    }
+    .illustration1-words div > p{
+        padding-left: 2.5em;
+      text-align: justify;
+         width: 31em;
+    }
+    .form1 {
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 1.5em;
+    }
+    .form1 > input[type="text"]{
+        width: 18em;
+        padding: 1.1em;
+    }
+    .form1 > button{
+        position: static;
+        width: 9.4em;
+    }
+} 
+.section-two{
+    background-image: url("./images/bg-curve-mobile.svg");
+    background-size:cover;
+    background-position: center;
+    height: 55em;
+    margin-top: 6em;
+}
+.illustration2-words > h1{
+    text-align: center;
+    font-size: 20px;
+    color: var(--veryDarkBlue);
+}
+
+.illustration2-words > p{
+    padding-top: 1.4em;
+    padding-left: 1em;
+    text-align: center;
+    width: 22em;
+    line-height: 1.3em;
+    text-align-last: left;
+    color: #56546a;
+}
+.example{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2em;
+    text-decoration: underline;
+    position: relative;
+    color: #549088;
+    width: 20em;
+}
+.example > img{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    right: 3em;
+}
+/* this was difficult */
+.blockky{
+   position: relative;
+   padding-top: 2em;
+   display: flex;
+   justify-content: center;
+}
+blockquote{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+blockquote div{
+    width: 22em;
+    font-size: 14px;
+    padding-left: 1em;
+    line-height: 1.3em;
+    color: var(--veryDarkBlue);
+}
+blockquote div > cite{
+    top: 7em;
+    padding-left: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+blockquote > cite > div{
+    padding-left: 1em;
+    color: var(--veryDarkBlue);
+}
+blockquote div > cite > img{
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+}
+@media (min-width: 1000px){
+    .section-two{
+        background-image: url("./images/bg-curve-desktop.svg");
+        position: relative;
+        height: 38em;
+    } 
+    .section-two .illustration2 > img{
+        width: 60em; 
+        padding-left: 32em;
+    }
+    .illustration2-words{
+        position: absolute;
+        bottom: 23em;
+        left: 5em;
+    }
+    .illustration2-words > h1{
+        font-size: 23px;
+        padding-right: 5em;
+    }
+    .illustration2-words > p{
+        width: 33em;
+        text-align: justify;
+    }
+.example{
+padding-top: 0;
+bottom: 12.5em;
+left: 0.9em;
+padding: 2em;
+}
+.blockky{
+ padding-top: 0;
+ bottom: 12em;
+ right: 24em;
+ }
+ blockquote{
+     padding: 1em;
+ }
+ blockquote div{
+    font-size: 16px;
+}
+
+}
+/* but sha i run am */
+.section-three{
+    background-color: var( --desaturatedBlue);
+    height: 25em;
+}
+.illusration3-words > h1{
+    text-align: center;
+}
+.illusration3-words > p{
+    color: var(--lightGrayishBlue);
+    text-align: center;
+    width: 21em;
+    padding-top: 1.4em;
+    padding-left: 1.4em;
+}
+@media (min-width: 1000px){
+    .section-three{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5em;
+        padding-right: 8em;
+        padding-bottom: 10em;
+        height: 14em;
+    }
+    .illusration3-words > h1{
+   padding-right: 6em;
+    }
+    .illusration3-words > p{
+        width: 28em;
+        text-align: justify;
+    }
+    .form2{
+        margin-bottom: 5em;
+    }
+    .form2 > input[type='text']{
+        width: 27em;
+        padding: 1.1em;
+    }
+    .form2 > button{
+        width:13em;
+        margin-right: 7em;
+        margin-top: 0.5em;
+    }
+    }
+
+footer{
+    background-color: var(--veryDarkBlue);
+    padding-bottom: 8em;
+}
+
+footer > div{
+    padding-top: 2em;
+}
+footer, footer > div ul{
+    display: block;
+}
+footer, footer > div ul li{
+    text-decoration: none;
+    list-style: none;
+    color: var(--lightGrayishBlue);
+    font-size: 20px;
+}
+footer  .socialMedias > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    padding-left: 8em;
+    width: 4em;
+}
+footer  .socialMedias > ul > li > img{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+text-decoration: none;
+}
+@media (min-width: 1000px){
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer > div{
+        padding-top: 0;
+    }
+    footer > div ul li{
+        padding-top: 3em;
+        color: var(--lightGrayishBlue);
+        font-size: 18px;
+    }
+}
