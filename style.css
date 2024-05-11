@@ -263,6 +263,9 @@ blockquote div > cite > img{
     }
     }
     @media (min-width: 1000px){
+        body{
+            overflow-x: hidden;
+        }
         .section-two{
             background-image: url("./images/bg-curve-desktop.svg");
             position: relative;
