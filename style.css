@@ -91,58 +91,7 @@ button{
     color: var(--lightGrayishBlue);
     font-size: 18px;
 }
-@media (min-width: 1000px){
-    .nav-left > img{
-        width: 34em;
-        padding-left: 0em;
-        padding-right: 25em;
-    }
-    ul li{
-     padding: 2em;
-     font-size: 18px;
-    }
-    .section-one,.section-two{
-        justify-content: space-between;
-    }
-    .section-one .illustration1  > img{
-        width: 70em;
-        padding-left: 32em;
-    }
-    .illustration1-words{
-      position: relative;
-    }
-    .illustration1-words > div{
-        position: absolute;
-        bottom: 10em;
-        left: 3em;
-    }
-    .illustration1-words div > h1{
-        padding-left: 1.8em;
-        text-align: justify;
-        width: 17em;
-        text-align-last: start;
-    }
-    .illustration1-words div > p{
-        padding-left: 2.5em;
-      text-align: justify;
-         width: 31em;
-    }
-    .form1 {
-        position: static;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-left: 1.5em;
-    }
-    .form1 > input[type="text"]{
-        width: 18em;
-        padding: 1.1em;
-    }
-    .form1 > button{
-        position: static;
-        width: 9.4em;
-    }
-} 
+
 .section-two{
     background-image: url("./images/bg-curve-mobile.svg");
     background-size:cover;
@@ -217,48 +166,7 @@ blockquote div > cite > img{
     width: 2em;
     height: 2em;
 }
-@media (min-width: 1000px){
-    .section-two{
-        background-image: url("./images/bg-curve-desktop.svg");
-        position: relative;
-        height: 38em;
-    } 
-    .section-two .illustration2 > img{
-        width: 60em; 
-        padding-left: 32em;
-    }
-    .illustration2-words{
-        position: absolute;
-        bottom: 23em;
-        left: 5em;
-    }
-    .illustration2-words > h1{
-        font-size: 23px;
-        padding-right: 5em;
-    }
-    .illustration2-words > p{
-        width: 33em;
-        text-align: justify;
-    }
-.example{
-padding-top: 0;
-bottom: 12.5em;
-left: 0.9em;
-padding: 2em;
-}
-.blockky{
- padding-top: 0;
- bottom: 12em;
- right: 24em;
- }
- blockquote{
-     padding: 1em;
- }
- blockquote div{
-    font-size: 16px;
-}
 
-}
 /* but sha i run am */
 .section-three{
     background-color: var( --desaturatedBlue);
@@ -275,6 +183,56 @@ padding: 2em;
     padding-left: 1.4em;
 }
 @media (min-width: 1000px){
+    .nav-left > img{
+        width: 34em;
+        padding-left: 0em;
+        padding-right: 25em;
+    }
+    ul li{
+     padding: 2em;
+     font-size: 18px;
+    }
+    .section-one,.section-two{
+        justify-content: space-between;
+    }
+    .section-one .illustration1  > img{
+        width: 70em;
+        padding-left: 32em;
+    }
+    .illustration1-words{
+      position: relative;
+    }
+    .illustration1-words > div{
+        position: absolute;
+        bottom: 10em;
+        left: 3em;
+    }
+    .illustration1-words div > h1{
+        padding-left: 1.8em;
+        text-align: justify;
+        width: 17em;
+        text-align-last: start;
+    }
+    .illustration1-words div > p{
+        padding-left: 2.5em;
+      text-align: justify;
+         width: 31em;
+    }
+    .form1 {
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 1.5em;
+    }
+    .form1 > input[type="text"]{
+        width: 18em;
+        padding: 1.1em;
+    }
+    .form1 > button{
+        position: static;
+        width: 9.4em;
+    }
     .section-three{
         display: flex;
         justify-content: space-between;
@@ -304,19 +262,60 @@ padding: 2em;
         margin-top: 0.5em;
     }
     }
-
+    @media (min-width: 1000px){
+        .section-two{
+            background-image: url("./images/bg-curve-desktop.svg");
+            position: relative;
+            height: 38em;
+        } 
+        .section-two .illustration2 > img{
+            width: 60em; 
+            padding-left: 32em;
+        }
+        .illustration2-words{
+            position: absolute;
+            bottom: 23em;
+            left: 5em;
+        }
+        .illustration2-words > h1{
+            font-size: 23px;
+            padding-right: 5em;
+        }
+        .illustration2-words > p{
+            width: 33em;
+            text-align: justify;
+        }
+    .example{
+    padding-top: 0;
+    bottom: 12.5em;
+    left: 0.9em;
+    padding: 2em;
+    }
+    .blockky{
+     padding-top: 0;
+     bottom: 12em;
+     right: 24em;
+     }
+     blockquote{
+         padding: 1em;
+     }
+     blockquote div{
+        font-size: 16px;
+    }
+    
+    }
 footer{
     background-color: var(--veryDarkBlue);
     padding-bottom: 8em;
 }
 
-footer > div{
+footer > div, footer aside{
     padding-top: 2em;
 }
-footer, footer > div ul{
+footer > aside ul, footer > div ul{
     display: block;
 }
-footer, footer > div ul li{
+footer > aside ul li, footer > div ul li{
     text-decoration: none;
     list-style: none;
     color: var(--lightGrayishBlue);
@@ -335,25 +334,58 @@ footer  .socialMedias > ul > li > img{
     border-radius: 50%;
 }
 .attribution { 
-    font-size: 16px; 
-    text-align: center; 
+    font-size: 12px; 
+    text-align: center;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 text-decoration: none;
 }
+aside > ul li .logo{
+    filter: brightness(0) invert(1);
+  }
 @media (min-width: 1000px){
     footer{
         display: flex;
         justify-content: space-evenly;
+        padding-right: 15em;
         align-items: center;
+        padding-bottom: 0;
     }
-    footer > div{
+    footer > div, footer > aside{
+        display: flex;
         padding-top: 0;
     }
-    footer > div ul li{
-        padding-top: 3em;
+    footer  .socialMedias > ul{
+        padding-left: 0em;
+        width: 0;
+    }
+    footer > div ul li, footer > aside ul li{
+        padding-top: 0;
         color: var(--lightGrayishBlue);
         font-size: 18px;
     }
+    .attribution{
+        display: none;
+    }
+    footer  .socialMedias > ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+        padding-left: 7em;
+        width: 1em;
+    }
+    footer .socialMedias > ul > li > img {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        background-color: var(--veryDarkBlue);
+        border-radius: 50%;
+        background-size: 60% 60%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      aside{
+        padding-bottom: 3em;
+      }
 }
