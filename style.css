@@ -91,7 +91,9 @@ button{
     color: var(--lightGrayishBlue);
     font-size: 18px;
 }
-
+button:hover{
+    opacity: 0.5;
+}
 .section-two{
     background-image: url("./images/bg-curve-mobile.svg");
     background-size:cover;
@@ -123,6 +125,9 @@ button{
     position: relative;
     color: #549088;
     width: 20em;
+}
+.example:hover{
+    opacity: 0.5;
 }
 .example > img{
     width: 2em;
@@ -367,6 +372,9 @@ aside > ul li .logo{
         padding-top: 0;
         color: var(--lightGrayishBlue);
         font-size: 18px;
+    }
+    footer > div ul li:hover, footer > aside ul li:hover{
+        opacity: 0.5;
     }
     .attribution{
         display: none;
